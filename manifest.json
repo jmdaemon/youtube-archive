@@ -1,0 +1,16 @@
+{
+
+  "manifest_version": 2,
+  "name": "Youtube-Archive",
+  "version": "1.0",
+
+  "description": "Shows you the archived/dead pages of unlisted/private/deleted youtube videos.",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["youtube-archive.js"]
+    }
+  ]
+
+}
